@@ -240,19 +240,100 @@
                     <i class="fas fa-images text-blue-600 mr-3"></i>
                     Galeri Foto
                 </h3>
-                <div class="grid grid-cols-2 md:grid-cols-3 gap-4">
-                    <img src="assets/pic/tpq/silaturahmi-tpq-alittihad-b.jpg" alt="Galeri 1" class="gallery-img rounded-lg shadow-md w-full h-40 object-cover cursor-pointer">
-                    <img src="assets/pic/tpq/silaturahmi-tpq-alittihad-c.jpg" alt="Galeri 2" class="gallery-img rounded-lg shadow-md w-full h-40 object-cover cursor-pointer">
-                    <img src="assets/pic/tpq/silaturahmi-tpq-alittihad-d.jpg" alt="Galeri 3" class="gallery-img rounded-lg shadow-md w-full h-40 object-cover cursor-pointer">
-                    <img src="assets/pic/tpq/silaturahmi-tpq-alittihad-e.jpg" alt="Galeri 4" class="gallery-img rounded-lg shadow-md w-full h-40 object-cover cursor-pointer">
-                    <img src="assets/pic/tpq/silaturahmi-tpq-alittihad-f.jpg" alt="Galeri 5" class="gallery-img rounded-lg shadow-md w-full h-40 object-cover cursor-pointer">
-                    <img src="assets/pic/tpq/silaturahmi-tpq-alittihad-g.jpg" alt="Galeri 6" class="gallery-img rounded-lg shadow-md w-full h-40 object-cover cursor-pointer">
-                    <img src="assets/pic/tpq/silaturahmi-tpq-alittihad-h.jpg" alt="Galeri 7" class="gallery-img rounded-lg shadow-md w-full h-40 object-cover cursor-pointer">
-                    <img src="assets/pic/tpq/silaturahmi-tpq-alittihad-i.jpg" alt="Galeri 8" class="gallery-img rounded-lg shadow-md w-full h-40 object-cover cursor-pointer">
-                    <img src="assets/pic/tpq/silaturahmi-tpq-alittihad-j.jpg" alt="Galeri 9" class="gallery-img rounded-lg shadow-md w-full h-40 object-cover cursor-pointer">
-                    <img src="assets/pic/tpq/silaturahmi-tpq-alittihad-Ustadz-saifuddin-kamali.jpg" alt="Ustadz Saifuddin" class="gallery-img rounded-lg shadow-md w-full h-40 object-cover cursor-pointer">
-                    <img src="assets/pic/tpq/silaturahmi-tpq-alittihad-ustadzah-samhatun.jpg" alt="Ustadzah Samhatun" class="gallery-img rounded-lg shadow-md w-full h-40 object-cover cursor-pointer">
+                <!-- Lightbox Modal -->
+                <div id="lightbox" class="fixed inset-0 bg-black bg-opacity-90 z-50 hidden flex-col items-center justify-center">
+                    <button id="closeLightbox" class="absolute top-4 right-4 text-white text-3xl z-10">
+                        <i class="fas fa-times"></i>
+                    </button>
+                    <button id="prevBtn" class="absolute left-4 text-white text-3xl z-10 p-2">
+                        <i class="fas fa-chevron-left"></i>
+                    </button>
+                    <button id="nextBtn" class="absolute right-4 text-white text-3xl z-10 p-2">
+                        <i class="fas fa-chevron-right"></i>
+                    </button>
+                    <img id="lightboxImg" src="" alt="" class="max-w-[90%] max-h-[90%] object-contain">
+                    <p id="lightboxCaption" class="text-white mt-4 text-center"></p>
                 </div>
+
+                <div class="grid grid-cols-2 md:grid-cols-3 gap-4">
+                    <img src="assets/pic/tpq/silaturahmi-tpq-alittihad-b.jpg" alt="Galeri 1" class="gallery-img rounded-lg shadow-md w-full h-40 object-cover cursor-pointer" onclick="openLightbox(0)">
+                    <img src="assets/pic/tpq/silaturahmi-tpq-alittihad-c.jpg" alt="Galeri 2" class="gallery-img rounded-lg shadow-md w-full h-40 object-cover cursor-pointer" onclick="openLightbox(1)">
+                    <img src="assets/pic/tpq/silaturahmi-tpq-alittihad-d.jpg" alt="Galeri 3" class="gallery-img rounded-lg shadow-md w-full h-40 object-cover cursor-pointer" onclick="openLightbox(2)">
+                    <img src="assets/pic/tpq/silaturahmi-tpq-alittihad-e.jpg" alt="Galeri 4" class="gallery-img rounded-lg shadow-md w-full h-40 object-cover cursor-pointer" onclick="openLightbox(3)">
+                    <img src="assets/pic/tpq/silaturahmi-tpq-alittihad-f.jpg" alt="Galeri 5" class="gallery-img rounded-lg shadow-md w-full h-40 object-cover cursor-pointer" onclick="openLightbox(4)">
+                    <img src="assets/pic/tpq/silaturahmi-tpq-alittihad-g.jpg" alt="Galeri 6" class="gallery-img rounded-lg shadow-md w-full h-40 object-cover cursor-pointer" onclick="openLightbox(5)">
+                    <img src="assets/pic/tpq/silaturahmi-tpq-alittihad-h.jpg" alt="Galeri 7" class="gallery-img rounded-lg shadow-md w-full h-40 object-cover cursor-pointer" onclick="openLightbox(6)">
+                    <img src="assets/pic/tpq/silaturahmi-tpq-alittihad-i.jpg" alt="Galeri 8" class="gallery-img rounded-lg shadow-md w-full h-40 object-cover cursor-pointer" onclick="openLightbox(7)">
+                    <img src="assets/pic/tpq/silaturahmi-tpq-alittihad-j.jpg" alt="Galeri 9" class="gallery-img rounded-lg shadow-md w-full h-40 object-cover cursor-pointer" onclick="openLightbox(8)">
+                    <img src="assets/pic/tpq/silaturahmi-tpq-alittihad-Ustadz-saifuddin-kamali.jpg" alt="Ustadz Saifuddin" class="gallery-img rounded-lg shadow-md w-full h-40 object-cover cursor-pointer" onclick="openLightbox(9)">
+                    <img src="assets/pic/tpq/silaturahmi-tpq-alittihad-ustadzah-samhatun.jpg" alt="Ustadzah Samhatun" class="gallery-img rounded-lg shadow-md w-full h-40 object-cover cursor-pointer" onclick="openLightbox(10)">
+                </div>
+
+                <script>
+                    const galleryImages = [
+                        {src: "assets/pic/tpq/silaturahmi-tpq-alittihad-b.jpg", alt: "Galeri 1"},
+                        {src: "assets/pic/tpq/silaturahmi-tpq-alittihad-c.jpg", alt: "Galeri 2"},
+                        {src: "assets/pic/tpq/silaturahmi-tpq-alittihad-d.jpg", alt: "Galeri 3"},
+                        {src: "assets/pic/tpq/silaturahmi-tpq-alittihad-e.jpg", alt: "Galeri 4"},
+                        {src: "assets/pic/tpq/silaturahmi-tpq-alittihad-f.jpg", alt: "Galeri 5"},
+                        {src: "assets/pic/tpq/silaturahmi-tpq-alittihad-g.jpg", alt: "Galeri 6"},
+                        {src: "assets/pic/tpq/silaturahmi-tpq-alittihad-h.jpg", alt: "Galeri 7"},
+                        {src: "assets/pic/tpq/silaturahmi-tpq-alittihad-i.jpg", alt: "Galeri 8"},
+                        {src: "assets/pic/tpq/silaturahmi-tpq-alittihad-j.jpg", alt: "Galeri 9"},
+                        {src: "assets/pic/tpq/silaturahmi-tpq-alittihad-Ustadz-saifuddin-kamali.jpg", alt: "Ustadz Saifuddin"},
+                        {src: "assets/pic/tpq/silaturahmi-tpq-alittihad-ustadzah-samhatun.jpg", alt: "Ustadzah Samhatun"}
+                    ];
+
+                    let currentIndex = 0;
+                    const lightbox = document.getElementById('lightbox');
+                    const lightboxImg = document.getElementById('lightboxImg');
+                    const lightboxCaption = document.getElementById('lightboxCaption');
+                    const closeLightbox = document.getElementById('closeLightbox');
+                    const prevBtn = document.getElementById('prevBtn');
+                    const nextBtn = document.getElementById('nextBtn');
+
+                    function openLightbox(index) {
+                        currentIndex = index;
+                        lightboxImg.src = galleryImages[index].src;
+                        lightboxCaption.textContent = galleryImages[index].alt;
+                        lightbox.classList.remove('hidden');
+                        lightbox.classList.add('flex');
+                        document.body.style.overflow = 'hidden';
+                    }
+
+                    function closeLightboxFunc() {
+                        lightbox.classList.add('hidden');
+                        lightbox.classList.remove('flex');
+                        document.body.style.overflow = 'auto';
+                    }
+
+                    function showPrev() {
+                        currentIndex = (currentIndex - 1 + galleryImages.length) % galleryImages.length;
+                        lightboxImg.src = galleryImages[currentIndex].src;
+                        lightboxCaption.textContent = galleryImages[currentIndex].alt;
+                    }
+
+                    function showNext() {
+                        currentIndex = (currentIndex + 1) % galleryImages.length;
+                        lightboxImg.src = galleryImages[currentIndex].src;
+                        lightboxCaption.textContent = galleryImages[currentIndex].alt;
+                    }
+
+                    closeLightbox.addEventListener('click', closeLightboxFunc);
+                    prevBtn.addEventListener('click', showPrev);
+                    nextBtn.addEventListener('click', showNext);
+
+                    lightbox.addEventListener('click', (e) => {
+                        if (e.target === lightbox) closeLightboxFunc();
+                    });
+
+                    document.addEventListener('keydown', (e) => {
+                        if (lightbox.classList.contains('hidden')) return;
+                        if (e.key === 'Escape') closeLightboxFunc();
+                        if (e.key === 'ArrowLeft') showPrev();
+                        if (e.key === 'ArrowRight') showNext();
+                    });
+                </script>
             </div>
         </div>
     </section>
