@@ -1,0 +1,235 @@
+c:\Users\hdweb\projects\alittihadkebarongan\contact.html
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact - Al-Ittihad Kebarongan</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+        
+        * {
+            font-family: 'Poppins', sans-serif;
+        }
+        
+        .gradient-bg {
+            background: linear-gradient(135deg, #1e3a8a 0%, #3b82f6 100%);
+        }
+        
+        .card-hover {
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        
+        .card-hover:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+        }
+        
+        .nav-item {
+            transition: color 0.3s ease;
+        }
+        
+        .nav-item:hover, .nav-item.active {
+            color: #3b82f6;
+        }
+        
+        .bottom-nav {
+            box-shadow: 0 -2px 10px rgba(0,0,0,0.1);
+        }
+    </style>
+</head>
+<body class="bg-gray-50 pb-20">
+    <!-- Header -->
+    <header class="gradient-bg text-white sticky top-0 z-50">
+        <div class="container mx-auto px-4 py-4">
+            <div class="flex items-center justify-between">
+                <div class="flex items-center space-x-3">
+                    <a href="index.html" class="text-2xl">
+                        <i class="fas fa-arrow-left"></i>
+                    </a>
+                    <div>
+                        <h1 class="text-xl font-bold">Contact</h1>
+                        <p class="text-xs text-blue-100">Hubungi Kami</p>
+                    </div>
+                </div>
+                <button id="menuBtn" class="text-2xl">
+                    <i class="fas fa-bars"></i>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Mobile Menu -->
+    <div id="mobileMenu" class="fixed inset-0 bg-black bg-opacity-50 z-40 hidden">
+        <div class="bg-white w-64 h-full p-6">
+            <div class="flex justify-between items-center mb-8">
+                <h2 class="text-xl font-bold text-gray-800">Menu</h2>
+                <button id="closeMenu" class="text-2xl text-gray-600">
+                    <i class="fas fa-times"></i>
+                </button>
+            </div>
+            <nav class="space-y-4">
+                <a href="index.html" class="nav-item flex items-center space-x-3 text-lg text-gray-600">
+                    <i class="fas fa-home w-6"></i>
+                    <span>Home</span>
+                </a>
+                <a href="profil.html" class="nav-item flex items-center space-x-3 text-lg text-gray-600">
+                    <i class="fas fa-info-circle w-6"></i>
+                    <span>Profil</span>
+                </a>
+                <a href="dakwah.html" class="nav-item flex items-center space-x-3 text-lg text-gray-600">
+                    <i class="fas fa-book-open w-6"></i>
+                    <span>Dakwah</span>
+                </a>
+                <a href="lembaga.html" class="nav-item flex items-center space-x-3 text-lg text-gray-600">
+                    <i class="fas fa-building w-6"></i>
+                    <span>Lembaga</span>
+                </a>
+                <a href="contact.html" class="nav-item active flex items-center space-x-3 text-lg">
+                    <i class="fas fa-phone w-6"></i>
+                    <span>Contact</span>
+                </a>
+            </nav>
+        </div>
+    </div>
+
+    <!-- Content -->
+    <section class="py-8">
+        <div class="container mx-auto px-4">
+            <!-- Contact Info -->
+            <div class="bg-white rounded-xl p-6 shadow-md mb-6">
+                <h3 class="text-xl font-bold text-gray-800 mb-6 flex items-center">
+                    <i class="fas fa-map-marker-alt text-blue-600 mr-3"></i>
+                    Informasi Kontak
+                </h3>
+                <div class="space-y-4">
+                    <div class="flex items-start space-x-4">
+                        <div class="w-10 h-10 bg-blue-100 rounded-full flex items-center justify-center flex-shrink-0">
+                            <i class="fas fa-map-marker-alt text-blue-600"></i>
+                        </div>
+                        <div>
+                            <h4 class="font-semibold text-gray-800">Alamat</h4>
+                            <p class="text-gray-600">Jl. Kebarongan, [Kecamatan], [Kabupaten], [Provinsi]</p>
+                        </div>
+                    </div>
+                    <div class="flex items-start space-x-4">
+                        <div class="w-10 h-10 bg-green-100 rounded-full flex items-center justify-center flex-shrink-0">
+                            <i class="fas fa-phone text-green-600"></i>
+                        </div>
+                        <div>
+                            <h4 class="font-semibold text-gray-800">Telepon</h4>
+                            <a href="tel:+628123456789" class="text-gray-600 hover:text-blue-600">+62 812 3456 789</a>
+                        </div>
+                    </div>
+                    <div class="flex items-start space-x-4">
+                        <div class="w-10 h-10 bg-red-100 rounded-full flex items-center justify-center flex-shrink-0">
+                            <i class="fas fa-envelope text-red-600"></i>
+                        </div>
+                        <div>
+                            <h4 class="font-semibold text-gray-800">Email</h4>
+                            <a href="mailto:info@alittihadkebarongan.com" class="text-gray-600 hover:text-blue-600">info@alittihadkebarongan.com</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Social Media -->
+            <div class="bg-white rounded-xl p-6 shadow-md mb-6">
+                <h3 class="text-xl font-bold text-gray-800 mb-6 flex items-center">
+                    <i class="fas fa-share-alt text-blue-600 mr-3"></i>
+                    Media Sosial
+                </h3>
+                <div class="grid grid-cols-2 gap-4">
+                    <a href="#" class="card-hover bg-gradient-to-br from-blue-500 to-blue-600 text-white rounded-xl p-4 text-center">
+                        <i class="fab fa-facebook-f text-2xl mb-2"></i>
+                        <p class="font-medium">Facebook</p>
+                    </a>
+                    <a href="#" class="card-hover bg-gradient-to-br from-pink-500 to-red-600 text-white rounded-xl p-4 text-center">
+                        <i class="fab fa-instagram text-2xl mb-2"></i>
+                        <p class="font-medium">Instagram</p>
+                    </a>
+                    <a href="#" class="card-hover bg-gradient-to-br from-green-500 to-green-600 text-white rounded-xl p-4 text-center">
+                        <i class="fab fa-whatsapp text-2xl mb-2"></i>
+                        <p class="font-medium">WhatsApp</p>
+                    </a>
+                    <a href="#" class="card-hover bg-gradient-to-br from-red-600 to-red-700 text-white rounded-xl p-4 text-center">
+                        <i class="fab fa-youtube text-2xl mb-2"></i>
+                        <p class="font-medium">YouTube</p>
+                    </a>
+                </div>
+            </div>
+
+            <!-- Contact Form -->
+            <div class="bg-white rounded-xl p-6 shadow-md">
+                <h3 class="text-xl font-bold text-gray-800 mb-6 flex items-center">
+                    <i class="fas fa-paper-plane text-blue-600 mr-3"></i>
+                    Kirim Pesan
+                </h3>
+                <form class="space-y-4">
+                    <div>
+                        <label class="block text-sm font-medium text-gray-700 mb-1">Nama</label>
+                        <input type="text" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent outline-none" placeholder="Masukkan nama Anda">
+                    </div>
+                    <div>
+                        <label class="block text-sm font-medium text-gray-700 mb-1">Email</label>
+                        <input type="email" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent outline-none" placeholder="Masukkan email Anda">
+                    </div>
+                    <div>
+                        <label class="block text-sm font-medium text-gray-700 mb-1">Pesan</label>
+                        <textarea rows="4" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent outline-none" placeholder="Tulis pesan Anda..."></textarea>
+                    </div>
+                    <button type="submit" class="w-full gradient-bg text-white py-3 rounded-lg font-medium hover:opacity-90 transition">
+                        <i class="fas fa-paper-plane mr-2"></i>
+                        Kirim Pesan
+                    </button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Bottom Navigation -->
+    <nav class="bottom-nav fixed bottom-0 left-0 right-0 bg-white z-50">
+        <div class="flex justify-around items-center py-2">
+            <a href="index.html" class="flex flex-col items-center py-2 px-4 text-gray-400">
+                <i class="fas fa-home text-xl mb-1"></i>
+                <span class="text-xs font-medium">Home</span>
+            </a>
+            <a href="profil.html" class="flex flex-col items-center py-2 px-4 text-gray-400">
+                <i class="fas fa-info-circle text-xl mb-1"></i>
+                <span class="text-xs font-medium">Profil</span>
+            </a>
+            <a href="lembaga.html" class="flex flex-col items-center py-2 px-4 text-gray-400">
+                <i class="fas fa-building text-xl mb-1"></i>
+                <span class="text-xs font-medium">Lembaga</span>
+            </a>
+            <a href="contact.html" class="flex flex-col items-center py-2 px-4 text-blue-600">
+                <i class="fas fa-phone text-xl mb-1"></i>
+                <span class="text-xs font-medium">Contact</span>
+            </a>
+        </div>
+    </nav>
+
+    <script>
+        // Mobile Menu Toggle
+        const menuBtn = document.getElementById('menuBtn');
+        const closeMenu = document.getElementById('closeMenu');
+        const mobileMenu = document.getElementById('mobileMenu');
+
+        menuBtn.addEventListener('click', () => {
+            mobileMenu.classList.remove('hidden');
+        });
+
+        closeMenu.addEventListener('click', () => {
+            mobileMenu.classList.add('hidden');
+        });
+
+        mobileMenu.addEventListener('click', (e) => {
+            if (e.target === mobileMenu) {
+                mobileMenu.classList.add('hidden');
+            }
+        });
+    </script>
+</body>
+</html>
