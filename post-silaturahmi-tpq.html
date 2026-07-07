@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Silaturahmi Keluarga Besar Majelis Ta'lim dan TPQ Al Ittihad Kebarongan</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+        
+        * {
+            font-family: 'Poppins', sans-serif;
+        }
+        
+        .gradient-bg {
+            background: linear-gradient(135deg, #1e3a8a 0%, #3b82f6 100%);
+        }
+        
+        .card-hover {
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        
+        .card-hover:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+        }
+        
+        .nav-item {
+            transition: color 0.3s ease;
+        }
+        
+        .nav-item:hover, .nav-item.active {
+            color: #3b82f6;
+        }
+        
+        .bottom-nav {
+            box-shadow: 0 -2px 10px rgba(0,0,0,0.1);
+        }
+        
+        .gallery-img {
+            transition: transform 0.3s ease;
+        }
+        
+        .gallery-img:hover {
+            transform: scale(1.05);
+        }
+    </style>
+</head>
+<body class="bg-gray-50 pb-20">
+    <!-- Header -->
+    <header class="gradient-bg text-white sticky top-0 z-50">
+        <div class="container mx-auto px-4 py-4">
+            <div class="flex items-center justify-between">
+                <div class="flex items-center space-x-3">
+                    <a href="dakwah.html" class="text-2xl">
+                        <i class="fas fa-arrow-left"></i>
+                    </a>
+                    <div>
+                        <h1 class="text-xl font-bold">Berita</h1>
+                        <p class="text-xs text-blue-100">Al-Ittihad Kebarongan</p>
+                    </div>
+                </div>
+                <button id="menuBtn" class="text-2xl">
+                    <i class="fas fa-bars"></i>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Mobile Menu -->
+    <div id="mobileMenu" class="fixed inset-0 bg-black bg-opacity-50 z-40 hidden">
+        <div class="bg-white w-64 h-full p-6">
+            <div class="flex justify-between items-center mb-8">
+                <h2 class="text-xl font-bold text-gray-800">Menu</h2>
+                <button id="closeMenu" class="text-2xl text-gray-600">
+                    <i class="fas fa-times"></i>
+                </button>
+            </div>
+            <nav class="space-y-4">
+                <a href="index.html" class="nav-item flex items-center space-x-3 text-lg text-gray-600">
+                    <i class="fas fa-home w-6"></i>
+                    <span>Home</span>
+                </a>
+                <a href="profil.html" class="nav-item flex items-center space-x-3 text-lg text-gray-600">
+                    <i class="fas fa-info-circle w-6"></i>
+                    <span>Profil</span>
+                </a>
+                <a href="dakwah.html" class="nav-item active flex items-center space-x-3 text-lg">
+                    <i class="fas fa-book-open w-6"></i>
+                    <span>Dakwah</span>
+                </a>
+                <a href="lembaga.html" class="nav-item flex items-center space-x-3 text-lg text-gray-600">
+                    <i class="fas fa-building w-6"></i>
+                    <span>Lembaga</span>
+                </a>
+                <a href="contact.html" class="nav-item flex items-center space-x-3 text-lg text-gray-600">
+                    <i class="fas fa-phone w-6"></i>
+                    <span>Contact</span>
+                </a>
+            </nav>
+        </div>
+    </div>
+
+    <!-- Content -->
+    <section class="py-8">
+        <div class="container mx-auto px-4">
+            <!-- Featured Image -->
+            <div class="mb-6">
+                <img src="assets/pic/tpq/silaturahmi-tpq-alittihad-a.jpg" alt="Silaturahmi TPQ Al Ittihad" class="w-full rounded-xl shadow-lg">
+            </div>
+
+            <!-- Title -->
+            <div class="bg-white rounded-xl p-6 shadow-md mb-6">
+                <h1 class="text-2xl font-bold text-gray-800 mb-3">Menanam Jiwa Syukur dan Ketangguhan Muslimah: Silaturahmi Keluarga Besar Majelis Ta'lim dan TPQ Al Ittihad Kebarongan</h1>
+                <div class="flex items-center text-sm text-gray-500 mb-4">
+                    <i class="fas fa-calendar mr-2"></i>
+                    <span>Selasa, 7 Juli 2026 / 22 Muharram 1448 H</span>
+                </div>
+            </div>
+
+            <!-- Article Content -->
+            <div class="bg-white rounded-xl p-6 shadow-md mb-6">
+                <article class="prose max-w-none text-gray-700 leading-relaxed">
+                    <p class="mb-4">
+                        <strong>KEBARONGAN, alittihadkebarongan.com</strong> – Suasana Ceria dan penuh rasa syukur memenuhi Masjid Al Ittihad Kebarongan pada hari Selasa, 7 Juli 2026 (bertepatan dengan 22 Muharram 1448 H). Ratusan jamaah yang terdiri dari ibu-ibu Majelis Ta'lim, para santri TPQ, wali santri, serta tokoh masyarakat memadati ruangan guna menghadiri acara Silaturahmi Keluarga Besar Majelis Ta'lim dan TPQ Al Ittihad Kebarongan.
+                    </p>
+                    <p class="mb-4">
+                        Acara akbar tahunan ini menghadirkan penceramah kondang dari Cilacap, Ustadzah Samhatun, S.Ag., yang membawakan pengajian interaktif bertajuk penguatan potensi syukur dan ketangguhan perempuan muslimah dalam menghadapi tantangan zaman.
+                    </p>
+
+                    <h2 class="text-xl font-bold text-gray-800 mt-8 mb-4">Sinergi Pengurus dan Apresiasi Generasi Qur'ani</h2>
+                    <p class="mb-4">
+                        Acara dibuka dengan pembacaan ayat suci Al-Qur'an dan penampilan hafalan dari para santri TPQ Al Ittihad. Keharuan merebak saat anak-anak dengan fasih melantunkan ayat demi ayat Al-Qur'an secara berjamaah.
+                    </p>
+
+                    <h3 class="text-lg font-semibold text-gray-800 mt-6 mb-3">1. Pesan Ketua Yayasan: Menjaga Kualitas TPQ dan Mengawal Legalitas Resmi Kemenag</h3>
+                    <p class="mb-4">
+                        Ketua Yayasan Al Ittihad, Ustadz Saifuddin Kamali, dalam sambutannya menyampaikan rasa bangga dan apresiasi yang setinggi-tingginya kepada para santri TPQ Al Ittihad. Beliau secara khusus mengucapkan selamat kepada para santri yang kini telah berhasil menyelesaikan hafalan Surat An-Naba.
+                    </p>
+                    <p class="mb-4">
+                        "Melihat anak-anak kita hafal Surat An-Naba adalah anugerah yang luar biasa. Ini merupakan langkah awal dari lahirnya generasi penjaga Al-Qur'an dari Kebarongan," tutur Ust. Saifuddin hangat.
+                    </p>
+                    <p class="mb-4">
+                        Selain itu, Ust. Saifuddin juga menyampaikan pesan titipan dari Kepala Desa Kebarongan, Bapak M. Harun, A.Md., yang berhalangan hadir secara langsung di lokasi. Dalam pesannya, Kepala Desa menekankan pentingnya peran aktif seluruh elemen masyarakat dalam mengawal kegiatan TPQ sebagai benteng moral anak bangsa.
+                    </p>
+                    <p class="mb-4">
+                        Lebih lanjut, Kades M. Harun berpesan agar pengelola TPQ benar-benar memperhatikan aspek administrasi dan legalitas resmi lembaga di Kementerian Agama (Kemenag). Legalitas formal dinilai krusial agar keberadaan TPQ Al Ittihad diakui secara hukum, terdata secara nasional, serta memudahkan sinergi program-program keagamaan dari pemerintah ke depannya.
+                    </p>
+
+                    <h3 class="text-lg font-semibold text-gray-800 mt-6 mb-3">2. Ketua Majelis Ta'lim: Menjaga Api Semangat Menuntut Ilmu</h3>
+                    <p class="mb-4">
+                        Senada dengan Ketua Yayasan, Ustadz Fauzan selaku Ketua Pengurus Majelis Ta'lim sekaligus Ta'mir Masjid Al Ittihad, membakar semangat para jamaah yang didominasi oleh ibu-ibu. Beliau mengingatkan bahwa majelis ilmu bukan sekadar tempat berkumpul biasa, melainkan taman-taman surga (riyadhul jannah) di dunia.
+                    </p>
+                    <p class="mb-4">
+                        "Jangan pernah kendor untuk melangkahkan kaki ke majelis taklim. Semangat mengaji harus terus kita jaga, karena dari rahim ibu-ibu yang salihah dan berilmu inilah, anak-anak yang hebat dan tangguh akan dilahirkan," tegas Ust. Fauzan dalam orasi singkatnya yang menyejukkan.
+                    </p>
+
+                    <h3 class="text-lg font-semibold text-gray-800 mt-6 mb-3">3. Ketua Pengurus TPQ: Alihkan Candu Gadget ke Al-Qur'an</h3>
+                    <p class="mb-4">
+                        Sementara itu, tantangan riil pola asuh anak di era digital disorot tajam oleh Ustadz Iswanto, Ketua Pengurus TPQ Al Ittihad. Beliau menyoroti kekhawatiran para orang tua terkait tingginya interaksi anak-anak dengan gawai atau handphone (HP).
+                    </p>
+                    <p class="mb-4">
+                        "Tantangan terbesar kita hari ini adalah layar HP. Anak-anak kita bisa betah berjam-jam menatap layar gadget, namun cepat bosan membaca kitab suci. Oleh karena itu, mari kita alihkan aktivitas mereka ke TPQ. Di sini, waktu bermain mereka digantikan dengan kegiatan belajar yang menyenangkan, mengaji, dan bersosialisasi secara sehat," ajak Ust. Iswanto di hadapan para wali santri yang hadir.
+                    </p>
+
+                    <h2 class="text-xl font-bold text-gray-800 mt-8 mb-4">Tausiyah Ustadzah Samhatun, S.Ag: Memaksimalkan Potensi Diri dan Meneladani Ketangguhan Siti Hajar</h2>
+                    <p class="mb-4">
+                        Memasuki acara inti, suasana masjid menjadi sangat dinamis saat Ustadzah Samhatun, S.Ag. naik ke mimbar. Dengan gaya penyampaiannya yang khas—humoristis, interaktif, namun sarat akan dalil-dalil mendalam—ia berhasil menghipnotis ratusan pasang mata jamaah yang hadir.
+                    </p>
+
+                    <h3 class="text-lg font-semibold text-gray-800 mt-6 mb-3">Formula 5 Modal Bersyukur: Fisik, Pikir, Zikir, Dengar, Lihat</h3>
+                    <p class="mb-4">
+                        Ustadzah Samhatun mengawali ceramahnya dengan mengingatkan jamaah bahwa manusia sering kali merasa tidak bahagia bukan karena kekurangan nikmat, melainkan karena gagal memanfaatkan apa yang sudah Allah titipkan.
+                    </p>
+                    <p class="mb-4">
+                        "Punya telinga hendaknya digunakan untuk mendengarkan nasihat dan Al-Qur'an, bukan hal-hal yang membuat kita lemah. Punya mata, gunakan untuk membaca Al-Qur'an. Jangan sampai ada mbah-mbah usia lanjut, ditanya kabarnya bilang, 'Alhamdulillah sehat, anak sehat, putu waras, urip aman', tapi seminggu Al-Qur'an tidak pernah dibaca lalu merasa baik-baik saja. Sesungguhnya mata yang tidak digunakan membaca Al-Qur'an sedang dalam kondisi tidak baik-baik saja!" tegasnya bersemangat.
+                    </p>
+                    <p class="mb-4">
+                        Untuk memudahkan jamaah mengingat modal dasar bersyukur yang tertuang dalam Al-Qur'an (la'allakum tasykurun), Ustadzah Samhatun mengajak seluruh ibu-ibu melakukan gerakan interaktif motorik. Beliau memimpin hafalan lima potensi diri dengan gerakan tangan berulang-ulang:
+                    </p>
+                    <ul class="list-disc pl-6 mb-4 space-y-2">
+                        <li>Fisik (untuk beramal)</li>
+                        <li>Pikir/Akal (untuk berpikir)</li>
+                        <li>Zikir/Hati (untuk berzikir)</li>
+                        <li>Dengar/Telinga (untuk mendengar kebaikan)</li>
+                        <li>Lihat/Mata (untuk melihat ayat-ayat Allah)</li>
+                    </ul>
+                    <p class="mb-4">
+                        "Ikuti saya, Bu! Jangan disimpan tangannya. Ayo Mbah, yang di belakang ikut juga," ajak Ustadzah yang langsung disambut tawa dan gerakan kompak para jamaah memperagakan instruksi konsentrasi tersebut.
+                    </p>
+
+                    <h3 class="text-lg font-semibold text-gray-800 mt-6 mb-3">Tangga Kecerdasan Muslimah: Menjadi Wanita yang Sadar "Rabb"</h3>
+                    <p class="mb-4">
+                        Setelah memahamkan pilar syukur, Ustadzah Samhatun mengajak jamaah meniti tangga kecerdasan spiritual. Tangga pertama dan utama adalah kesadaran penuh bahwa Allah adalah Rabb.
+                    </p>
+                    <p class="mb-4">
+                        "Rabb itu artinya Dia yang menciptakan kita, mengatur hidup kita, dan menguasai hidup kita. Ketika seorang muslimah sadar hidupnya diatur oleh yang Maha Mengatur, maka hatinya tidak akan pernah gelisah. Ia akan rida dan tenang atas segala takdir aturan-Nya," jelas Ustadzah Samhatun.
+                    </p>
+
+                    <h3 class="text-lg font-semibold text-gray-800 mt-6 mb-3">Meneladani Siti Hajar: "Perempuan Jangan Cengeng!"</h3>
+                    <p class="mb-4">
+                        Sebagai contoh konkret wanita cerdas nan tangguh, Ustadzah Samhatun mengisahkan perjuangan Siti Hajar di padang tandus Safa dan Marwah saat ditinggal Nabi Ibrahim AS tanpa perbekalan yang cukup. Beliau menyisipkan humor khas dialek lokal Banyumasan yang mengocok perut sekaligus menohok sanubari jamaah.
+                    </p>
+                    <p class="mb-4">
+                        "Siti Hajar bertanya sampai tiga kali, 'Ibrahim, hendak ke mana engkau pergi?' Ibrahim diam nelangsa. Bayangkan kalau ibu-ibu di sini ditanya suaminya diam saja, pasti langsung mangkel, kan? 'Pak, deneng meneng bae ora semaur, mangkel apa ora?' Pasti mangkel!" kelakarnya disambut tawa riuh para ibu-ibu.
+                    </p>
+                    <p class="mb-4">
+                        "Namun, Siti Hajar adalah perempuan cerdas. Pertanyaan berikutnya langsung menusuk ke inti iman: 'Apakah engkau pergi karena perintah Allah?' Begitu Ibrahim mengangguk, Siti Hajar langsung mantap berkata, 'Jika ini perintah Allah, maka Allah tidak mungkin menyia-nyiakanku di sini.'"
+                    </p>
+                    <p class="mb-4">
+                        Ustadzah Samhatun menekankan pesan moral penting dari kisah tersebut bagi muslimah modern: Perempuan Al Ittihad tidak boleh cengeng.
+                    </p>
+                    <p class="mb-4">
+                        "Jangan jadi perempuan yang kalau ditinggal atau diuji sedikit langsung ngelemporok (lemas tanpa daya) mengeluh, 'Yaa, kena bojoku lunga kayak kiye, jan ninggali utang pirang-pirang, bocah cilik-cilik.' Perempuan yang beriman tahu bahwa Rabb-lah yang mengatur segalanya. Menangis boleh, tapi mengadu dan menangislah di hadapan Allah dalam sujud, bukan mengeluh di hadapan manusia," pesannya dengan nada mendalam.
+                    </p>
+
+                    <h3 class="text-lg font-semibold text-gray-800 mt-6 mb-3">Pengingat Uban dan Kematian</h3>
+                    <p class="mb-4">
+                        Di penghujung tausiyah, Ustadzah Samhatun memberikan nasihat spiritual yang menyentuh hati mengenai hakikat usia. Beliau mengingatkan bahwa fisik yang menua adalah sinyal alami yang dikirimkan oleh Sang Pencipta.
+                    </p>
+                    <p class="mb-4">
+                        "Ini saya lihat wajah-wajahnya sebagian sudah dekat... sudah dekat dengan tanah," candanya yang mencairkan ketegangan spiritual. "Uban yang mulai tumbuh itu adalah surat undangan, tanda peringatan kematian dari Allah SWT agar kita segera berbenah diri. Karena itu, pastikan sisa umur kita diisi dengan kesadaran penuh bahwa Allah adalah Rabb kita tempat bersandar."
+                    </p>
+
+                    <h2 class="text-xl font-bold text-gray-800 mt-8 mb-4">Penutup dan Komitmen Bersama</h2>
+                    <p class="mb-4">
+                        Acara silaturahmi yang penuh berkah ini ditutup dengan doa bersama yang dipimpin langsung oleh Ustadzah Samhatun. Derai air mata tampak mengalir di pipi beberapa jamaah saat doa keselamatan dan keistiqamahan dipanjatkan untuk keluarga, anak-anak, serta masa depan lembaga pendidikan Al Ittihad.
+                    </p>
+                    <p class="mb-4">
+                        Dengan terselenggaranya acara ini, pengurus Yayasan Al Ittihad Kebarongan berharap tali silaturahmi antara majelis taklim, pengurus TPQ, wali santri, dan masyarakat semakin erat. Komitmen bersama untuk menjauhkan anak-anak dari pengaruh buruk gawai dan mengarahkannya pada kegiatan positif di TPQ kini menjadi tekad yang bulat demi melahirkan generasi emas yang Qur'ani, mandiri, dan berakhlakul karimah.
+                    </p>
+                    <p class="text-right text-gray-500 text-sm">(Redaksi al-ittihad)</p>
+                </article>
+            </div>
+
+            <!-- Photo Gallery -->
+            <div class="bg-white rounded-xl p-6 shadow-md">
+                <h3 class="text-xl font-bold text-gray-800 mb-4 flex items-center">
+                    <i class="fas fa-images text-blue-600 mr-3"></i>
+                    Galeri Foto
+                </h3>
+                <div class="grid grid-cols-2 md:grid-cols-3 gap-4">
+                    <img src="assets/pic/tpq/silaturahmi-tpq-alittihad-b.jpg" alt="Galeri 1" class="gallery-img rounded-lg shadow-md w-full h-40 object-cover cursor-pointer">
+                    <img src="assets/pic/tpq/silaturahmi-tpq-alittihad-c.jpg" alt="Galeri 2" class="gallery-img rounded-lg shadow-md w-full h-40 object-cover cursor-pointer">
+                    <img src="assets/pic/tpq/silaturahmi-tpq-alittihad-d.jpg" alt="Galeri 3" class="gallery-img rounded-lg shadow-md w-full h-40 object-cover cursor-pointer">
+                    <img src="assets/pic/tpq/silaturahmi-tpq-alittihad-e.jpg" alt="Galeri 4" class="gallery-img rounded-lg shadow-md w-full h-40 object-cover cursor-pointer">
+                    <img src="assets/pic/tpq/silaturahmi-tpq-alittihad-f.jpg" alt="Galeri 5" class="gallery-img rounded-lg shadow-md w-full h-40 object-cover cursor-pointer">
+                    <img src="assets/pic/tpq/silaturahmi-tpq-alittihad-g.jpg" alt="Galeri 6" class="gallery-img rounded-lg shadow-md w-full h-40 object-cover cursor-pointer">
+                    <img src="assets/pic/tpq/silaturahmi-tpq-alittihad-h.jpg" alt="Galeri 7" class="gallery-img rounded-lg shadow-md w-full h-40 object-cover cursor-pointer">
+                    <img src="assets/pic/tpq/silaturahmi-tpq-alittihad-i.jpg" alt="Galeri 8" class="gallery-img rounded-lg shadow-md w-full h-40 object-cover cursor-pointer">
+                    <img src="assets/pic/tpq/silaturahmi-tpq-alittihad-j.jpg" alt="Galeri 9" class="gallery-img rounded-lg shadow-md w-full h-40 object-cover cursor-pointer">
+                    <img src="assets/pic/tpq/silaturahmi-tpq-alittihad-Ustadz-saifuddin-kamali.jpg" alt="Ustadz Saifuddin" class="gallery-img rounded-lg shadow-md w-full h-40 object-cover cursor-pointer">
+                    <img src="assets/pic/tpq/silaturahmi-tpq-alittihad-ustadzah-samhatun.jpg" alt="Ustadzah Samhatun" class="gallery-img rounded-lg shadow-md w-full h-40 object-cover cursor-pointer">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Bottom Navigation -->
+    <nav class="bottom-nav fixed bottom-0 left-0 right-0 bg-white z-50">
+        <div class="flex justify-around items-center py-2">
+            <a href="index.html" class="flex flex-col items-center py-2 px-4 text-gray-400">
+                <i class="fas fa-home text-xl mb-1"></i>
+                <span class="text-xs font-medium">Home</span>
+            </a>
+            <a href="profil.html" class="flex flex-col items-center py-2 px-4 text-gray-400">
+                <i class="fas fa-info-circle text-xl mb-1"></i>
+                <span class="text-xs font-medium">Profil</span>
+            </a>
+            <a href="lembaga.html" class="flex flex-col items-center py-2 px-4 text-gray-400">
+                <i class="fas fa-building text-xl mb-1"></i>
+                <span class="text-xs font-medium">Lembaga</span>
+            </a>
+            <a href="contact.html" class="flex flex-col items-center py-2 px-4 text-gray-400">
+                <i class="fas fa-phone text-xl mb-1"></i>
+                <span class="text-xs font-medium">Contact</span>
+            </a>
+        </div>
+    </nav>
+
+    <script>
+        // Mobile Menu Toggle
+        const menuBtn = document.getElementById('menuBtn');
+        const closeMenu = document.getElementById('closeMenu');
+        const mobileMenu = document.getElementById('mobileMenu');
+
+        menuBtn.addEventListener('click', () => {
+            mobileMenu.classList.remove('hidden');
+        });
+
+        closeMenu.addEventListener('click', () => {
+            mobileMenu.classList.add('hidden');
+        });
+
+        mobileMenu.addEventListener('click', (e) => {
+            if (e.target === mobileMenu) {
+                mobileMenu.classList.add('hidden');
+            }
+        });
+    </script>
+</body>
+</html>
